@@ -59,7 +59,7 @@ vim.o.termguicolors = true
 --enable line wrap
 vim.opt.wrap = true
 
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 
 -- vim.opt.cursorcolumn = true
 

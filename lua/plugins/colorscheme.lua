@@ -7,6 +7,7 @@ return {
   { "shaunsingh/nord.nvim" },
 
   { "sainnhe/everforest" },
+  {"rebelot/kanagawa.nvim"},
   {
     "LazyVim/LazyVim",
     opts = {
