@@ -96,6 +96,14 @@ vim.keymap.set("n", "<leader>cb", ":Navbuddy<CR>", opts)
 vim.keymap.set("n", "<leader>cc", function()
   require("luasnip").session.current_nodes[vim.api.nvim_get_current_buf()] = nil
 end, { desc = "clear luasnip jumplist" })
---
---toggle autosaving
+
+-- toggle autosaving
 vim.api.nvim_set_keymap("n", "<leader>n", ":ASToggle<CR>", {})
+
+-- comment box keymaps
+vim.keymap.set({"n", "v"}, "<leader>c/b","<Cmd>CBlcbox<CR>", opts)
+vim.keymap.set({"n", "v"}, "<leader>c/l","<Cmd>CBllline 6<CR>", opts)
+vim.keymap.set({"n", "v"}, "<leader>c/d","<Cmd>CBd<CR>", opts)
+vim.keymap.set({"n", "v"}, "<leader>c/y","<Cmd>CBy<CR>", opts)
+vim.keymap.set({"n", "v"}, "<leader>c/c","<Cmd>CBcatalog<CR>", opts)
+
