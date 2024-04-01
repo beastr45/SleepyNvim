@@ -1,4 +1,5 @@
-# 💤 LazyVim
+# 💤 SleepyNvim
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+Configuration of LazyVim
+Initial project [LazyVim](https://github.com/LazyVim/LazyVim).
+Refrence [documentation](https://lazyvim.github.io/installation)
