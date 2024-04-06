@@ -64,3 +64,6 @@ vim.opt.relativenumber = true
 -- vim.opt.cursorcolumn = true
 
 vim.g.autoformat = false
+vim.cmd([[
+au VimLeave * set guicursor=a:ver100
+]])
