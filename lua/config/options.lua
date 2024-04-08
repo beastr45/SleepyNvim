@@ -61,6 +61,7 @@ vim.opt.wrap = true
 
 vim.opt.relativenumber = true
 
+vim.o.colorcolumn = "80"
 -- vim.opt.cursorcolumn = true
 
 vim.g.autoformat = false
