@@ -107,3 +107,6 @@ vim.keymap.set({"n", "v"}, "<leader>c/d","<Cmd>CBd<CR>", opts)
 vim.keymap.set({"n", "v"}, "<leader>c/y","<Cmd>CBy<CR>", opts)
 vim.keymap.set({"n", "v"}, "<leader>c/c","<Cmd>CBcatalog<CR>", opts)
 
+
+vim.keymap.set("n", "<leader>cg", "<Cmd>make<CR>")
+vim.keymap.set("n", "<leader>ch", "<Cmd>make run<CR>")
