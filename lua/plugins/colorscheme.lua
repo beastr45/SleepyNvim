@@ -3,11 +3,21 @@ return {
   { "catppuccin/nvim" },
   -- { "tanvirtin/monokai.nvim" },
   { "tomasr/molokai" },
-  { "ellisonleao/gruvbox.nvim" },
+  {
+    "ellisonleao/gruvbox.nvim",
+    opts = function()
+      require("gruvbox").setup({
+        palette_overrides = {
+          dark1 = "#282828",
+        },
+      })
+    end,
+  },
   { "shaunsingh/nord.nvim" },
 
   { "sainnhe/everforest" },
-  {"rebelot/kanagawa.nvim"},
+  { "drewtempelmeyer/palenight.vim" },
+  { "rebelot/kanagawa.nvim" },
   {
     "LazyVim/LazyVim",
     opts = {
