@@ -4,7 +4,7 @@
 -- { "folke/trouble.nvim", enabled = false }
 
 return {
-  { "rcarriga/nvim-notify", enabled = false },
+  -- { "rcarriga/nvim-notify", enabled = false },
   { "echasnovski/mini.pairs", enabled = false },
   {
     "folke/lazy.nvim",
@@ -14,10 +14,10 @@ return {
       })
     end,
   },
-  {
-    "nvim-lspconfig",
-    opts = {
-      inlay_hints = { enabled = false },
-    },
-  },
+  -- {
+  --   "nvim-lspconfig",
+  --   opts = {
+  --     inlay_hints = { enabled = false },
+  --   },
+  -- },
 }

@@ -106,22 +106,3 @@ vim.keymap.set({"n", "v"}, "<leader>c/l","<Cmd>CBllline 6<CR>", opts)
 vim.keymap.set({"n", "v"}, "<leader>c/d","<Cmd>CBd<CR>", opts)
 vim.keymap.set({"n", "v"}, "<leader>c/y","<Cmd>CBy<CR>", opts)
 vim.keymap.set({"n", "v"}, "<leader>c/c","<Cmd>CBcatalog<CR>", opts)
-
-
-vim.keymap.set("n", "<leader>cg", "<Cmd>make<CR>")
-vim.keymap.set("n", "<leader>ch", "<Cmd>make run<CR>")
-
-if vim.g.neovide then
-  vim.keymap.set('n', '<C-s>', ':w<CR>') -- Save
-  vim.keymap.set('v', '<C-S-c>', '"+y') -- Copy
-  vim.keymap.set('n', '<C-S-v>', '"+P') -- Paste normal mode
-  vim.keymap.set('v', '<C-S-v>', '"+P') -- Paste visual mode
-  vim.keymap.set('c', '<C-S-v>', '<C-R>+') -- Paste command mode
-  vim.keymap.set('i', '<C-S-v>', '<ESC>l"+Pli') -- Paste insert mode
-end
-
-vim.g.neovide_scale_factor = 0.6
-vim.g.neovide_cursor_vfx_mode = "railgun"
-vim.g.neovide_cursor_trail_size = 0.2
-vim.g.neovide_cursor_vfx_particle_density = 8.0
-vim.g.neovide_cursor_vfx_particle_lifetime = 1.5

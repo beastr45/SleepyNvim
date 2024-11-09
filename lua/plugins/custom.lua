@@ -1,5 +1,6 @@
 --custom lazyvim independent plugins go here
 return {
+  -- { "wakatime/vim-wakatime", lazy = false },
   {
     "Pocco81/auto-save.nvim",
     opts = {
@@ -16,6 +17,18 @@ return {
   {
     "christoomey/vim-tmux-navigator",
     lazy = false,
+  },
+  {
+    "stevearc/conform.nvim",
+    opts = {
+
+      formatters_by_ft = {
+        html = { "prettier" },
+        css = { "prettier" },
+        -- fish = { "fish_indent" },
+        -- sh = { "shfmt" },
+      },
+    },
   },
 
   -- {
